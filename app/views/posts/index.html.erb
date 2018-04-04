@@ -1,0 +1,26 @@
+<h1>Hello, Rails</h1>
+<%= link_to 'My Blog', controller:  'posts' %>
+
+
+<%= link_to 'Новый пост', new_post_path %>
+
+<h1>Лист записей</h1>
+
+<table>
+  <tr>
+    <th>Название</th>
+    <th>Текст</th>
+    <th></th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.text %></td>
+      <td><%= link_to 'Show', post_path(post) %></td>
+    </tr>
+
+  <% end %>
+</table>
+
+<%= link_to "Назад", posts_path %>
