@@ -27,7 +27,7 @@ body, html {
 .header {
     height: 51px;
     border: 1px solid black;
-
+    background-color: #4d636f;
 }
 
 .profile {
@@ -35,10 +35,22 @@ body, html {
     height: 300px;
     border: 1px solid black;
     text-align: center;
+    background-color: white;
 }
 
 .post {
     width: 700px;
     height: 160px;
     border: 1px solid black;
+    background-color: white;
+}
+
+.post_input textarea {
+    width: 100%;
+}
+
+.post_show {
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: white;
 }
